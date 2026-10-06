@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "3時間超の動画を非表示",
+  "version": "1.0.0",
+  "description": "動画一覧から長さが3時間を超えるカードを隠します。",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
