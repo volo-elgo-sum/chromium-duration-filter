@@ -8,7 +8,8 @@
   const thresholdSeconds = 3 * 60 * 60;
   const hiddenClass = "duration-filter-hidden-card";
   const style = document.createElement("style");
-  style.textContent = `.${hiddenClass} { display: none !important; }`;
+  style.textContent = `${gridSelector} { grid-auto-flow: row dense !important; }
+.${hiddenClass} { display: none !important; }`;
   (document.head || document.documentElement).append(style);
 
   function parseDuration(text) {
